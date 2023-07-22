@@ -32,10 +32,18 @@ dependencies:
   cupertino_icons: ^1.0.2
   flutter:
     sdk: flutter
+  flutter_launcher_icons: ^0.13.1
   get: ^4.6.5
   http: ^0.13.6
   lottie: ^2.3.2
   shared_preferences: ^2.2.0
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/images/ethereum.png"
+  adaptive_icon_background: "ffffff" 
+  min_sdk_android: 19 # android min sdk  
 
 dev_dependencies:
   flutter_lints: ^2.0.0
