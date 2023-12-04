@@ -6,7 +6,6 @@ import '../../Controllers/themecontroller.dart';
 amnountWidget(BuildContext context) {
   final _theme = ThemeController.instance.currentTheme;
   final myHeight = MediaQuery.of(context).size.height;
-  final myWidth = MediaQuery.of(context).size.width;
   return Padding(
     padding: EdgeInsets.symmetric(horizontal: widthSize(20)),
     child: Row(

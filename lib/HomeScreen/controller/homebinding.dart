@@ -8,5 +8,6 @@ class HomeBinding extends Bindings {
   void dependencies() {
     // TODO: implement dependencies
     Get.put<ThemeController>(ThemeController());
+    Get.put<HomeController>(HomeController());
   }
 }

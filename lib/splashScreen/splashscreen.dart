@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_crypto_app/Nav-Bar/nav_barScreen.dart';
+import 'package:flutter_crypto_app/routes/routes.dart';
 import 'package:flutter_crypto_app/utils/sizes.dart';
 import 'package:get/get.dart';
 import 'package:lottie/lottie.dart';
@@ -12,7 +13,6 @@ class SplashScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final _theme = ThemeController.instance.currentTheme;
-    final myHeight = MediaQuery.of(context).size.height;
     final myWidth = MediaQuery.of(context).size.width;
     return Scaffold(
         backgroundColor: _theme.primaryColorLight,
@@ -52,8 +52,9 @@ class SplashScreen extends StatelessWidget {
                     ),
                     const Spacer(),
                     GestureDetector(
-                      onTap: () => Get.to(() => const MyButtomNavBar(),
-                          curve: Curves.easeIn),
+                      onTap: () => Get.toNamed(
+                        myRoutes.navbarScreen,
+                      ),
                       child: Container(
                         height: heightSize(50),
                         width: widthSize(myWidth),
@@ -65,7 +66,7 @@ class SplashScreen extends StatelessWidget {
                           mainAxisAlignment: MainAxisAlignment.spaceAround,
                           children: [
                             Text(
-                              "CREATE PORTFOLIO",
+                              "CONTINUE",
                               style: TextStyle(
                                 fontSize: fontSize(20),
                                 fontWeight: FontWeight.bold,

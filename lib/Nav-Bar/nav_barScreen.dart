@@ -18,7 +18,6 @@ class _MyButtomNavBarState extends State<MyButtomNavBar> {
   Widget build(BuildContext context) {
     final _theme = ThemeController.instance.currentTheme;
     final myHeight = MediaQuery.of(context).size.height;
-    final myWidth = MediaQuery.of(context).size.width;
     return LayoutBuilder(
       builder: (context, constraints) {
         return Scaffold(
